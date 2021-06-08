@@ -39,3 +39,9 @@ Então devo ver a notificação:
 
     Wait Until Element Contains     ${TOASTER_SUCCESS}     ${expect_notice}        5
 
+Então devo ver mensagens informando que os campos do cadastro de clientes são obrigatórios
+    Wait Until Element Contains     Nome é obrigatório          5
+    Wait Until Element Contains     CPF é obrigatório           5
+    Wait Until Element Contains     Endereço é obrigatório      5
+    Wait Until Element Contains     Telefone é obrigatório      5
+
